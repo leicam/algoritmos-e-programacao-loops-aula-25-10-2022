@@ -6,7 +6,7 @@ namespace Exemplo.Loops
     {
         static void Main(string[] args)
         {
-            ExemploLoopFor();
+            ExemploLoopDoWhile();
             Console.ReadKey();
         }
 
@@ -42,6 +42,16 @@ namespace Exemplo.Loops
             {
                 Console.WriteLine(palavra[contador]);
             }
+        }
+
+        private static void ExemploLoopDoWhile()
+        {
+            int menu = 0;
+            do
+            {
+                Console.WriteLine("Deseja sair? Digite 1");
+                menu = int.Parse(Console.ReadLine());
+            } while (menu == 0);
         }
     }
 }
